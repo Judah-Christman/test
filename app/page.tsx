@@ -1,11 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import "./globals.css"
 import React from 'react';
-import { Navigation } from './components.jsx';
-import { Preview } from './components.jsx';
+import { LandingPage } from './components.jsx';
+import { Jkc } from './components.jsx';
+import { Projects } from './components.jsx';
+import { Hobbies } from './components.jsx';
+import { motion } from 'framer-motion';
 import images from './images/headshot.jpg';
 import arduino from './images/arduino.png';
 import github from './images/github.png';
+import down from './images/down.png';
 
 
 
@@ -21,24 +26,24 @@ export default function Home() {
   return (
     <div>
 
-      <Navigation />
+      <main>
+        <div className={styles.backgroundColor}>
+          <div className={styles.landing}>
+            <LandingPage />
+
+            <section className={styles.mainSection}>
+              <div id="Jkc" className={styles.spacing} ><Jkc /></div>
+              <div id="Projects" className={styles.spacing}><Projects /></div>
+              <div id="Hobbies" className={styles.spacing}><Hobbies /></div>
+
+            </section>
+
+          </div>
+        </div>
+      </main>
 
       
-      <div className={styles.landing}>
-        <div className={styles.view}>
-          <div className={styles.topBar}>
-            <button className={styles.button1}><span className={styles.windows}>_</span></button>
-            <button className={styles.button2}><span className={styles.windows}>O</span></button>
-            <button className={styles.button3}><span className={styles.windows}>X</span></button>
-          </div>
-
-          <div className={styles.content}>
-            
-            <Preview />
-          </div>
-
-        </div>
-      </div>
+      
 
       <footer className={styles.footer}>
         <a className={styles.fancyFont}>Judah Christman 2025</a>

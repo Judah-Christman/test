@@ -1,7 +1,6 @@
 
-
 .navigation {
-  position: absolute;
+  position: fixed;
   width: 10%;
   height: 75%;
   padding: 5px;
@@ -14,7 +13,7 @@
 }
 
 .navList {
-  position: absolute;
+  position: fixed;
   width: 90%;
   list-style: none;
 /*  background: #161616;*/
@@ -39,6 +38,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 25px;
   transition: 0.5s;
 }
 
@@ -46,136 +46,100 @@
   color: lightgreen;
 }
 
+.backgroundColor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#333333 0%, #161616 100%);
+}
+
 .landing {
   position: absolute;
-  width: 75%;
-  height: 85%;
-  margin: auto;
-  padding: 5px;
-  background: #333333;
-  border-radius: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20%;
-}
-
-.view{
-  width: 95%;
-  height: 95%;
-  background: #161616;
-  border: #161616 2px solid;
-  border-radius: 10px;
-  margin: 10px auto;
-}
-
-.topBar {
   width: 100%;
-  height: 5%;
-  background: #161616;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom: 1px solid #333333;
-}
-
-.button1 {
-  width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 100%;
-  margin: 10px 3px;
-  transition: 1s;
-  background: red;
-  margin-left: 5px;
-}
-
-.button2 {
-  width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 100%;
-  margin: 10px 3px;
-  transition: 1s;
-  background: yellow;
-}
-
-.button3 {
-  width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 100%;
-  margin: 10px 3px;
-  transition: 1s;
-  background: lightgreen;
-}
-
-.windows {
-  visibility: collapse;
-}
-
-.preview {
-  position: relative;
-  width: 95%;
   height: 100%;
+  background-image: url("images/background.png");
+  background-size: cover;
+  border-radius: 10px;
+  overflow-y: scroll;
 }
 
-.hidden {
-  visibility: collapse;
-}
-
-.content {
-  width: 100%;
-  background: #161616;
-  height: 90%;
-/*  padding: 10px;*/
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.jkcIntro {
+.mainSection {
   position: absolute;
-  top: 35%;
+  top: 5%;
+  left: 15%;
+  width: 80%;
+  height: 90%;
+}
+
+
+
+
+.Jkc {
+  width: 100%;
+  height: 50%;
+/*  border: 1px solid white;*/
+  margin: 20px;
+}
+
+.paragraph {
   width: 50%;
   color: #f6f6f6;
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   padding: 10px;
-  margin: 10px;
+  margin-top: 3%;
+  margin-left: 5%;
 }
+
 
 .headshot {
-  border-radius: 100%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 15%;
-}
-
-.headshot1 {
+  top: 35%;
+  right: 10%;
   background-image: url("images/headshot.jpg");
   background-size: cover;
   box-shadow: 0 0 8px 8px #161616 inset;
   border-radius: 100%;
   width: 250px;
   height: 250px;
+}
+
+.squirtle {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 15%;
+  top: 60%;
+  right: 5%;
+  background-image: url("images/squirtle.png");
+  background-size: cover;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .title {
   width: fit-content;
-  position: absolute;
-  top: 15%;
-  left: 25%;
-  background: linear-gradient(45deg, lightgreen 0%, lightblue 50%, lightgreen 100%);
+  background: linear-gradient(45deg, lightblue 0%, lightgreen 50%, lightblue 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 4%;
   font-size: 30px;
+}
+.smallTitle {
+  width: fit-content;
+  background: linear-gradient(45deg, lightblue 0%, lightgreen 50%, lightblue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 10px;
+  margin: 10px 5%;
+  font-size: 25px;
+}
+
+.spacing {
+  margin: 5% auto 30%;
 }
 
 .footer {
@@ -191,7 +155,7 @@
 }
 
 .fancyFont {
-  color: #161616;
+  color: #f6f6f6;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
 }
@@ -207,4 +171,46 @@
   margin: 0 5%;
 }
 
+
+
+.figure {
+  width: 200px;
+  margin: 10% auto;
+}
+
+.figure:hover {
+  cursor: pointer;
+}
+
+
+.figureTitle {
+  width: 20%;
+  margin: 10px auto;
+  background: linear-gradient(45deg, lightgreen 0%, lightblue 50%, lightgreen 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.figureCap{
+  width: 100%;
+  color: #f6f6f6;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.flexContainer {
+  display: flex;
+  width: 100%;
+}
+
+.textCenter {
+  width: 75%;
+  margin: 20px auto;
+  color: #f6f6f6;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  text-align: center;
 
