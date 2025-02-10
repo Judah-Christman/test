@@ -60,7 +60,7 @@ const Jkc = () => {
       <div className={styles.Jkc}>
         <h2 className={styles.title}>JKC</h2>
         <div className={styles.headshot}></div>
-        <div className={styles.squirtle}></div>
+        <div className={styles.squirtle}   ></div>
         <p className={styles.paragraph}>Hello! I am Judah Christman, an ameteur in many tech fields, from robotics to web development. I have hope to bring my skills and talents into the professional world. On this site you can view a number of my projects and hobbies.</p>
         <h2 className={styles.smallTitle}>About Me</h2>
         <p className={styles.paragraph}>
