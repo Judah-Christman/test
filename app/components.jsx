@@ -84,7 +84,7 @@ const Projects = () => {
         <h1 className={styles.title}>My Projects</h1>
         <p className={styles.paragraph}>I enjoy creating and developing all kinds of software and devices. Check out a few of my projects!</p>
         <div className={styles.flexContainer}>
-          <motion.figure className={styles.figure} whileHover={{
+          <motion.figure href="./projects" className={styles.figure} whileHover={{
             scale: 1.2,
             transition: {
               duration: 0.2
